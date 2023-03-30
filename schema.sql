@@ -31,27 +31,24 @@ ALTER TABLE animals ADD COLUMN owner_id INT, ADD CONSTRAINT fk_owner_id FOREIGN 
 
 -- Table Vets
 CREATE TABLE vets (
-    id integer GENERATED ALWAYS AS IDENTITY,
-    name varchar(250) NOT NULL,
-    age integer NOT NULL,
-    date_of_birth data
+    id integer GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    name varchar(100) NOT NULL,
+    age integer,
+    date_of_graduation DATE
 );
 
 -- Table specializations
 CREATE TABLE specializations (
-    id integer GENERATED ALWAYS AS IDENTITY,
-    vets_id INT,
-    species_id INT,
-    CONSTRAINT  vets_fk FOREIGN KEY(vets_id) REFERENCES vets(id),
-    CONSTRAINT species_fk FOREIGN KEY(species_id) REFERENCES species(id)
+    vets_id integer REFERENCES vets(id), 
+    species_id integer REFERENCES species(id),
+    PRIMARY KEY (vets_id, species_id)
 );
+ALTER TABLE animals ADD CONSTRAINT animals_id_unique UNIQUE (id);
 
 -- Table Visits
 CREATE TABLE visits (
-    id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
-    animals_id INT,
-    vets_id INT,
-    date_of_visit data,
-    CONSTRAINT  vets_fk FOREIGN KEY(vets_id) REFERENCES vets(id),
-    CONSTRAINT species_fk FOREIGN KEY(species_id) REFERENCES species(id)
+    id integer GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    animals_id integer REFERENCES animals(id),
+    vets_id integer REFERENCES vets(id),
+    date_of_visit DATE,
 );
