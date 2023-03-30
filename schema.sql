@@ -29,4 +29,29 @@ ALTER TABLE animals DROP COLUMN species;
 ALTER TABLE animals ADD COLUMN species_id INT, ADD CONSTRAINT fk_species_id FOREIGN KEY (species_id) REFERENCES species(id);
 ALTER TABLE animals ADD COLUMN owner_id INT, ADD CONSTRAINT fk_owner_id FOREIGN KEY (owner_id) REFERENCES owners(id);
 
+-- Table Vets
+CREATE TABLE vets (
+    id integer GENERATED ALWAYS AS IDENTITY,
+    name varchar(250) NOT NULL,
+    age integer NOT NULL,
+    date_of_birth data
+);
 
+-- Table specializations
+CREATE TABLE specializations (
+    id integer GENERATED ALWAYS AS IDENTITY,
+    vets_id INT,
+    species_id INT,
+    CONSTRAINT  vets_fk FOREIGN KEY(vets_id) REFERENCES vets(id),
+    CONSTRAINT species_fk FOREIGN KEY(species_id) REFERENCES species(id)
+);
+
+-- Table Visits
+CREATE TABLE visits (
+    id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    animals_id INT,
+    vets_id INT,
+    date_of_visit data,
+    CONSTRAINT  vets_fk FOREIGN KEY(vets_id) REFERENCES vets(id),
+    CONSTRAINT species_fk FOREIGN KEY(species_id) REFERENCES species(id)
+);
