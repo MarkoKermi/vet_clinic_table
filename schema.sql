@@ -52,3 +52,12 @@ CREATE TABLE visits (
     vets_id integer REFERENCES vets(id),
     date_of_visit DATE,
 );
+
+-- Vet clinic database: database performance audit
+ALTER TABLE owners ADD COLUMN email VARCHAR(120);
+
+CREATE INDEX vet_id_idx ON visits (vets_id);
+CREATE INDEX animal_id_idx ON visits (animals_id);
+
+CREATE INDEX owners_email_asc ON owners (email ASC);
+CREATE INDEX owners_email_asc ON owners (email DESC);
