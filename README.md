@@ -34,32 +34,18 @@ Vet Clinic is a relational database based on a real-life example.
 
 ### Tech Stack <a name="tech-stack"></a>
 
-
-
-
-
-
-
-
 <details>
 <summary>Database</summary>
 <ul><li>Postgresql</li></ul>
 </details>
 
-
-
 ### Key Features <a name="key-features"></a>
-
-
 
 - **Multiple tables**
 
 - **Join tables**
 
 - **Db performance audit**
-
-
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -68,10 +54,7 @@ Vet Clinic is a relational database based on a real-life example.
 
 - **Live demo not available at this time**
 
-
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -81,11 +64,8 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need: PostgreSQL
 
-
 ### Setup
 Clone the repo and run the sql files.
-
-
 
 ### Install
 
@@ -94,9 +74,6 @@ Install this project with:
 psql -U <username> -d <databasename> -f schema.sql
 ```
 
-
-
-
 ### Usage
 
 To run the project, execute the following command:
@@ -104,39 +81,29 @@ To run the project, execute the following command:
 psql -U <username> -d <databasename> -f queries.sql
 ```
 
-
-
-
-
-
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 👥 Authors <a name="authors"></a>
 
-**Marko Kermichiev**
+👤 **Marko Kermichiev**
 
  - Github: [@MarkoKermi](https://github.com/MarkoKermi) 
  - Twitter: [@MarkKerm](https://twitter.com/MarkoKerm) 
  - LinkedIn: [@omarko-kermichiev](https://www.linkedin.com/in/marko-kermichiev/) 
 
- **Emeka Emmanuel Ugboaja**
+👤 **Emeka Emmanuel Ugboaja**
 
-- GitHub: [@EmekaEmmanuel]()
-- Twitter: [@iammanuelka01]()
-- LinkedIn: [LinkedIn]()
+- GitHub: [EmekaEmmanuel](https://github.com/EmekaEmmanuel)
+- Twitter: [@emekaekeoha](https://twitter.com/emekaekeoha)
+- LinkedIn: [emeka-ugboaja](https://www.linkedin.com/in/emeka-ugboaja)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-
-
 - [ ] **Db schema diagram**
 
 - [ ] **More tables**
-
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -159,9 +126,6 @@ If you like this project or find it useful, please consider giving it a ⭐️. 
 Multiple resources online and Microverse.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
