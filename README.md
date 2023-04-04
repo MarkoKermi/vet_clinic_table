@@ -93,7 +93,7 @@ psql -U <username> -d <databasename> -f queries.sql
 
  - Github: [@MarkoKermi](https://github.com/MarkoKermi) 
  - Twitter: [@MarkKerm](https://twitter.com/MarkoKerm) 
- - LinkedIn: [@omarko-kermichiev](https://www.linkedin.com/in/marko-kermichiev/) 
+ - LinkedIn: [@marko-kermichiev](https://www.linkedin.com/in/marko-kermichiev/) 
 
 👤 **Emeka Emmanuel Ugboaja**
 
