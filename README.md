@@ -85,6 +85,10 @@ psql -U <username> -d <databasename> -f queries.sql
 
 ## 👥 Authors <a name="authors"></a>
 
+<!-- Schema Diagram -->
+## Schema Diagram <a name="diagram"></a>
+<img src="img/Screenshot 2023-04-04 at 19.01.14.png">
+
 👤 **Marko Kermichiev**
 
  - Github: [@MarkoKermi](https://github.com/MarkoKermi) 
